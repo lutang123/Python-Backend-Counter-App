@@ -31,4 +31,20 @@ pip install -r requirements.txt
 
 python server.py
 
+Other note:
+
 Backend is accessible on http://0.0.0.0:3000 or http://127.0.0.1:3000.
+
+How to Test
+
+Get Counter: Open your browser or a tool like Postman, and make a GET request to:
+arduino
+Copy code
+http://127.0.0.1:3000/counter
+Increment Counter: Make a POST request to:
+arduino
+Copy code
+http://127.0.0.1:3000/increment
+
+This is a development server and should not be used in production without a proper WSGI server.
+CORS is enabled for testing with web frontends.
